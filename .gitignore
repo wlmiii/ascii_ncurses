@@ -1,0 +1,10 @@
+# ignore object and archive files
+*.[oa]
+
+# ignore the executable created
+ascii
+
+# ignore backup files created by vim
+*.~
+
+
