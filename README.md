@@ -13,3 +13,10 @@ You can also jump to control-codes using CTL + [some key], such as CTL+H to jump
 
 Enjoy!
 
+
+Dependencies
+------------
+
+This application is dependent upon the ncurses library; you will also need the development files installed to be able to compile this program.
+
+
