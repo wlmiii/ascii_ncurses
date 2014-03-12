@@ -31,7 +31,7 @@ private:
     int m_nColorID;
 
 public:
-    Color(int nColor);
+    Color(int nColor = COLOR_WHITE);
     virtual ~Color();
 
     // setters

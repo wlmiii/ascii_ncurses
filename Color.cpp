@@ -7,7 +7,7 @@
 
 #include "Color.h"
 
-Color::Color(int nColorID = COLOR_WHITE) {
+Color::Color(int nColorID) {
     // since COLOR_BLACK starts at 0, and color pair IDs need to start
     // at 1, just use the color ID + 1 for the pair ID.
     m_nColorID = nColorID;

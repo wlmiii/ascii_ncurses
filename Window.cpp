@@ -27,7 +27,7 @@ const int LAST_CHAR = 255;
 
 // default constructor - uses an initializer list
 // note that the window is always set to 41 columns wide by 24 rows high
-Window::Window(Debug *pcDebug = NULL)
+Window::Window(Debug *pcDebug)
 // initializer list - use separate lines for readability
 : m_nXCoord(0),
   m_nYCoord(0),

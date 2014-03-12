@@ -54,7 +54,7 @@ private:
 
 public:
     // default constructor
-    Window(Debug *pcDebug);
+    Window(Debug *pcDebug = NULL);
 
     // destructor
     virtual ~Window();
