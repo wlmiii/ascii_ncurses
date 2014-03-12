@@ -20,3 +20,26 @@ Dependencies
 This application is dependent upon the ncurses library; you will also need the development files installed to be able to compile this program.
 
 
+Building
+--------
+
+First, compile the source modules into objects:
+
+[user@host]$ g++ -c -o Debug.o Debug.cpp
+[user@host]$ g++ -c -o Color.o Color.cpp
+[user@host]$ g++ -c -o Window.o Window.cpp
+[user@host]$ g++ -c -o main.o main.cpp
+
+Then, link the object files to create the final binary:
+
+[user@host]$ g++ -o ascii -lpanel -lncurses Debug.o Color.o Window.o main.o
+
+You can also use wildcards instead of specifying each object file:
+
+[user@host]$ g++ -o ascii -lpanel -lncurses *.o
+
+NOTE: According to the ncurses documentation, you must link the panel library BEFORE the ncurses libary, so make sure that you have the libraries listed in the correct order as shown above!
+
+Now, you can simply run 'ascii' in a console/terminal application.
+
+
