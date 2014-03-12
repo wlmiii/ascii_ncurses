@@ -59,8 +59,9 @@ public:
     // destructor
     virtual ~Window();
 
-    // todo - get rid of unneeded setters/getters
     // setters
+    /* Commented out for now since they are not used,
+       but left here for future reference/use.
     void setXCoord(int nXCoord)         { m_nXCoord = nXCoord; }
     void setYCoord(int nYCoord)         { m_nYCoord = nYCoord; }
     void setWidth(int nWidth)           { m_nWidth = nWidth; }
@@ -69,6 +70,7 @@ public:
     void setPageSize(int nTotalLines)   { m_nPageSize = nTotalLines; }
     void setTitle(string strTitle)      { m_strTitle = strTitle; }
     void setStatus(string strStatus)    { m_strStatus = strStatus; }
+    */
 
     // getters
     int getXCoord()              { return m_nXCoord; }
@@ -77,9 +79,12 @@ public:
     int getHeight()              { return m_nHeight; }
     int getCurrLine()            { return m_nCurrentLine; }
     int getPageSize()            { return m_nPageSize; }
+    /* Commented out for now since they are not used,
+       but left here for future reference/use.
     Color getTitleColor()        { return m_cTitleColor; }
     Color getCurrentColor()      { return m_cCurrColor; }
     Color getStatusColor()       { return m_cStatusColor; }
+    */
     string getTitle()            { return m_strTitle; }
     string getStatus()           { return m_strStatus; }
     WINDOW *getWindowHandle()    { return m_pWin; }
